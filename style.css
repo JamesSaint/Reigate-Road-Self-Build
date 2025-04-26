@@ -1,0 +1,164 @@
+body {
+  background-color: #EEEEEE;
+  font-family: 'Titillium Web', sans-serif;
+  color: #333;
+}
+
+h1, h2, h5, .navbar-brand {
+  font-weight: 600;
+  color: #D4AF37;
+}
+.hero {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-divider {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, #D4AF37, transparent);
+  margin: 2rem 0;
+}
+
+.btn-sacred {
+  border: 2px solid #D4AF37;
+  color: #D4AF37;
+  background: transparent;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-sacred:hover {
+  background-color: #D4AF37;
+  color: white;
+}
+
+.nav-link {
+  position: relative;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #D4AF37; /* Sacred gold on hover and active */
+  text-decoration: none;
+}
+
+/* Underline setup */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #D4AF37;
+  transition: width 0.4s ease-in-out;
+}
+
+/* Smooth underline on hover */
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active link: underline is already fully expanded */
+.nav-link.active::after {
+  width: 100%;
+}
+/* Make the navbar hamburger lines gold */
+.navbar-toggler {
+  border-color: #D4AF37; /* Gold border box */
+}
+
+/* Hamburger icon inside (the 3 lines) */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23D4AF37' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+}
+
+.hero-bg {
+  background-image: url('images/Proposed_Front_Elevation_West.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.4); /* 40% dark overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+}
+
+/* Desktop parallax */
+@media (min-width: 992px) {
+  .hero-bg {
+    background-attachment: fixed;
+  }
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+.timeline-step {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #D4AF37;
+  background-color: white;
+  text-align: left;
+}
+table {
+  background-color: white;
+}
+
+th, td {
+  vertical-align: middle !important;
+}
+.gallery-img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
