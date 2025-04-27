@@ -36,6 +36,12 @@ h1, h2, h5, .navbar-brand {
   background-image: linear-gradient(to right, transparent, #D4AF37, transparent);
   margin: 2rem 0;
 }
+.list-wrapper {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
 .list-wrapper ul {
   list-style: none;
   padding-left: 0;
@@ -53,7 +59,7 @@ h1, h2, h5, .navbar-brand {
   position: absolute;
   left: 0;
   top: 0;
-  color: #d4af37; /* gold bullet */
+  color: #d4af37;
   font-size: 1em;
   line-height: 1.4;
 }
