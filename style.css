@@ -30,6 +30,18 @@ h1, h2, h5, .navbar-brand {
   justify-content: center;
   align-items: center;
 }
+.vision-intro {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-bottom: 10px;
+}
 .section-divider {
   border: 0;
   height: 2px;
