@@ -36,27 +36,24 @@ h1, h2, h5, .navbar-brand {
   background-image: linear-gradient(to right, transparent, #D4AF37, transparent);
   margin: 2rem 0;
 }
-.py-5 ul {
+.list-wrapper ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
-  text-align: center; /* center the whole list */
 }
 
-.py-5 ul li {
+.list-wrapper ul li {
   position: relative;
-  padding-left: 20px; /* small space between bullet and text */
-  display: inline-block; /* treat each li as a block */
-  text-align: left; /* but keep the text inside each li left-aligned */
+  padding-left: 20px;
   margin-bottom: 8px;
 }
 
-.py-5 ul li::before {
+.list-wrapper ul li::before {
   content: '•';
   position: absolute;
   left: 0;
   top: 0;
-  color: #d4af37; /* gold */
+  color: #d4af37; /* gold bullet */
   font-size: 1em;
   line-height: 1.4;
 }
