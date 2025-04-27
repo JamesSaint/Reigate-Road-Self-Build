@@ -41,6 +41,7 @@ h1, h2, h5, .navbar-brand {
   margin-right: auto;
   position: relative;
   padding-bottom: 10px;
+  font-weight: 300;
 }
 .section-divider {
   border: 0;
